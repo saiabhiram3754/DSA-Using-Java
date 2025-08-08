@@ -1,5 +1,3 @@
-package bit;
-
 import java.util.Scanner;
 
 public class num_in_two_power {

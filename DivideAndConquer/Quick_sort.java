@@ -10,6 +10,7 @@ public class Quick_sort {
         
         //last element
         int pidx = partition(arr,si,ei); 
+
         Quicksort(arr,si,pidx -1);
         Quicksort(arr,pidx+1,ei);
             
@@ -22,13 +23,14 @@ public class Quick_sort {
         for (int j = si; j < arr.length; j++) {
             if(arr[j] < pivot){
                 i++;
-                //swap
+                //swap of elements which are less than the pivot 
                 int temp = arr[j];
                 arr[j] = arr[i];
                 arr[i] = temp;
             }
         }
         i++; 
+        //swapping of pivot 
         int temp = pivot;
         arr[ei] = arr[i];
         arr[i] = temp;
