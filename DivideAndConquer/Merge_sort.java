@@ -15,14 +15,14 @@ public class Merge_sort {
 
     public static void merge(int[] arr,int si, int mid, int ei){
         // left (0,3) = 4 right(4,6) = 3
-        int temp[] = new int[ei-si+1];       // lenfth of the temp
+        int temp[] = new int[ei-si+1];       // length of the temp
         int i = si;
         int j = mid+1;
         int k = 0;
 
     
         while(i <= mid && j <= ei){
-            
+
             // copying elements from the left array 
 
             if(arr[i] < arr[j]){

@@ -1,5 +1,3 @@
-package Backtracking;
-
 public class n_Queen {
 
     public static boolean isSafe(char board[][], int row,int col){

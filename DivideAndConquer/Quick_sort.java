@@ -12,8 +12,8 @@ public class Quick_sort {
         int pidx = partition(arr,si,ei); 
 
         Quicksort(arr,si,pidx -1);
-        Quicksort(arr,pidx+1,ei);
-            
+        Quicksort(arr,pidx +1,ei);
+
     }
     
     public static int partition(int arr[],int si,int ei){
@@ -36,7 +36,7 @@ public class Quick_sort {
         arr[i] = temp;
         return i;
     }
-     public static void printArr(int arr[]){
+    public static void printArr(int arr[]){
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] +" ");
         }
