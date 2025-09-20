@@ -13,20 +13,20 @@
 //         }
 //     }
 
-//     // Preorder Traversal (Recursive)
-//     public static void inorder(Node root) {
+//     // Postorder Traversal (Recursive)
+//     public static void postorder(Node root) {
 //         if (root == null) {
 //             return;  // Base case
 //         }
 
 //         // Step 1: Traverse left subtree
-//         preorder(root.left);
+//         postorder(root.left);
 
-//         // Step 2: Visit root
+//         // Step 2: Traverse right subtree
+//         postorder(root.right);
+
+//         // Step 3: Visit root
 //         System.out.print(root.data + " ");
-
-//         // Step 3: Traverse right subtree
-//         preorder(root.right);
 //     }
 
 //     public static void main(String[] args) {
@@ -44,12 +44,14 @@
 //         root.left.right = new Node(5);
 //         root.right.right = new Node(6);
 
-//         System.out.print("Inorder Traversal: ");
-//         inorder(root); 
+//         System.out.print("Postorder Traversal: ");
+//         postorder(root); 
 //     }
 // }
 
-public class BuildTree_PreOrder{
+
+public class BuildTree_PostOrder{
+    
     static class Node{
         int data;
         Node left;
@@ -77,13 +79,13 @@ public class BuildTree_PreOrder{
             return newnode;
         }
 
-        public static void inorder(Node root){
+        public static void postorder(Node root){
             if(root == null){
                 return;
             }
-            inorder(root.left);
+            postorder(root.left);
+            postorder(root.right);
             System.out.print(root.data +" ");
-            inorder(root.right);
         }
     } 
 
@@ -93,7 +95,7 @@ public class BuildTree_PreOrder{
         Node root = tree.buildTree(nodes);
         System.out.println(root.data);
 
-        tree.inorder(root);
+        tree.postorder(root);
     }
 }
 
