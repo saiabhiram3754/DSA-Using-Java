@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Subarrays {
 
     // Function to print all subarrays and return count
@@ -14,7 +12,7 @@ public class Subarrays {
                 for (int k = i; k <= j; k++) {
                     System.out.print(arr[k] + " ");
                 }
-                System.out.print("}  ");
+                System.out.print("} ");
                 count++; // one subarray found
             }
             System.out.println(); // new line for clarity
