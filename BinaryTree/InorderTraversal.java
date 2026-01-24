@@ -49,7 +49,7 @@
 //     }
 // }
 
-public class BuildTree_PreOrder{
+public class InorderTraversal{
     static class Node{
         int data;
         Node left;
