@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Interleave {
+public class interleave {
     public static void interleave(int[] arr) {
         int n = arr.length;
         int mid = n / 2;
