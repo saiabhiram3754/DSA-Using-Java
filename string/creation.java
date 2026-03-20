@@ -51,7 +51,7 @@ public class creation {
     }
     else{
         System.out.println(" sre not equal");
-    }
+    } 
     sc.close();
 }
 }
